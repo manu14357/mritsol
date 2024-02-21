@@ -2505,34 +2505,7 @@ header h2 {
   visibility: visible;
 }
 
-@media (max-width: 490px) {
-  .chatbot-toggler {
-    right: 10px;
-    bottom: 20px;
-  }
-  .chatbot {
-    right: 7%;
-    bottom: 10%;
-    height: 50%;
-    border-radius: 25px;
-    width: 70%;
-    
-  }
-  .chatbot .chatbox {
-    height: 90%;
-    padding: 25px 15px 100px;
-  }
-  .chatbot .chat-input {
 
-  }
-    .chatbot .chat-input textarea {
-    font-size: 14px; /* Adjusted font size */
-  }
-  .chatbot header span {
-    display: block;
-
-  }
-}
 
 .chatname {
      font-size: 2rem;
@@ -2549,19 +2522,36 @@ header h2 {
 
 
 /* Media queries */
-@media screen and (max-width: 768px) {
+@media (max-width: 490px) {
+  .chatbot-toggler {
+    right: 10px;
+    bottom: 20px;
+  }
+  
   .chatbot {
-    padding: 5px; /* Adjust padding for smaller screens */
+    right: 7%;
+    bottom: 10%;
+    height: 50%;
+    border-radius: 25px;
+    width: 70%;
   }
-}
-
-@media screen and (max-width: 480px) {
+  
+  .chatbot .chatbox {
+    height: 70%; /* Adjusted height */
+    padding: 25px 15px 100px 0px;
+  }
+  
   .chat-input {
-    flex-direction: column;
+    height: 55px;
+    padding: 15px; /* Adjusted padding */
   }
-
+  
   .chat-input textarea {
-    margin-bottom: 1px;
-    padding: 3px;
+    font-size: 14px; /* Adjusted font size */
+  }
+ 
+  
+  .textarea {
+    margin-bottom: -100px; /* Adjusted margin */
   }
 }
